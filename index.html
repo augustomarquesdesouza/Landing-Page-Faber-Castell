@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FaberCastell</title>
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./webfontkit-20240711-131944/stylesheet.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,7 +17,7 @@
                     <img src="img/logo-header.png" alt="" id="logo-header">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-                    <span class="burguer-menu"></span>
+                    <i id="menu-icon" class="fa fa-bars" onclick="changeIcon(this)"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="menuNavbar">
                     <div class="navbar-nav ms-auto fs-6 text-left text-lg-center">
@@ -44,25 +45,25 @@
     <main>
         <section class="cards" id="materiais">
             <div class="container cards-container gap-5 py-5">
-                <div class="card pb-5 pb-lg-0 ps-0 pe-lg-5" style="width: 25rem;">
-                    <img src="./img/card-1.png" class="card-img-top img-fluid" alt="...">
+                <div class="card p-5 border-radius-5" style="width: 25rem;">
+                    <img src="./img/professor.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h4 class="card-title text-center fs-4 fw-bold rosa">Material do Professor</h4>
                         <p class="card-text text-center">Professores contam com um curso de formação sobre o assunto e sua conexão com as artes, aplicando o conhecimento em atividades práticas e dinâmicas.</p>
                     </div>
                 </div>
-                <div class="card pb-2 pb-lg-0 ps-0 pe-lg-5" style="width: 25rem;">
-                    <img src="./img/card-1.png" class="card-img-top img-fluid" alt="...">
+                <div class="card p-5 border-radius-5" style="width: 25rem;">
+                    <img src="./img/aluno.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h4 class="card-title text-center fs-4 fw-bold azul">Material do Aluno</h3>
                         <p class="card-text text-center">Alunos recebem materiais Faber-Castell e um Diário de Emoções, no qual encontram atividades para expressar e entender seus sentimentos.</p>
                     </div>
                 </div>
-                <div class="card pb-2 pb-lg-0 ps-0 pe-lg-5" style="width: 25em;">
+                <div class="card p-5 border-radius-5" style="width: 25rem;">
                     <img src="./img/card-1.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title text-center fs-4 fw-bold verde">Formação de Workshops</h4>
-                        <p class="card-text text-center">Pais e responsáveis têm acesso a workshops em que aprendem mais sobre a importância da inteligência emocional na vida de suas famílias.</p>
+                        <h4 class="card-title text-center fs-4 fw-bold azul">Formação de Workshops</h3>
+                        <p class="card-text text-center">Pais e responsáveis têm acesso a workshops em que aprendem mais sobre a importância da inteligência emocional na vida de suas famílias</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +98,7 @@
                             <img src="img/programa-pioneiro.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-10 pb-0 pb-lg-4 d-flex">
-                            <p class="align-self-center"><span class="verde">PROGRAMA PIONEIRO</span> no desenvolvimento socioemocional por meio da Arte.</p>
+                            <p class="align-self-center pt-2 pb-4 pb-lg-0"><span class="verde">PROGRAMA PIONEIRO</span> no desenvolvimento socioemocional por meio da Arte.</p>
                         </div>
                     </div>
                     <div class="row text-center text-lg-start">
@@ -105,7 +106,7 @@
                             <img src="img/aulas-ineditas.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-10 pb-0 pb-lg-4 d-flex">
-                            <p class="align-self-center"><span class="azul">AULAS INÉDITAS</span> criadas exclusivamente para o Programa SELF, com aquisição dos direitos autorais</p>
+                            <p class="align-self-center pt-2 pb-4 pb-lg-0"><span class="azul">AULAS INÉDITAS</span> criadas exclusivamente para o Programa SELF, com aquisição dos direitos autorais</p>
                         </div>
                     </div>
                     <div class="row text-center text-lg-start">
@@ -113,7 +114,7 @@
                             <img src="img/avaliacao.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-10 pb-0 pb-lg-4 d-flex">
-                            <p class="align-self-center"><span class="rosa">AVALIAÇÃO ATITUDINAL E PROCEDIMENTAL:</span> exclusivas do Programa.</p>
+                            <p class="align-self-center pt-2 pb-4 pb-lg-0"><span class="rosa">AVALIAÇÃO ATITUDINAL E PROCEDIMENTAL:</span> exclusivas do Programa.</p>
                         </div>
                     </div>
                     <div class="row text-center text-lg-start">
@@ -121,7 +122,7 @@
                             <img src="img/aplicacao-flexivel.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-10 d-flex">
-                            <p class="align-self-center"s><span class="amarelo"">APLICAÇÃO FLEXÍVEL</span> pode ser feita por professores specialistas, polivalentes e orientadores educacionais.</p>
+                            <p class="align-self-center pt-2 pb-4 pb-lg-0"><span class="amarelo"">APLICAÇÃO FLEXÍVEL</span> pode ser feita por professores specialistas, polivalentes e orientadores educacionais.</p>
                         </div>
                     </div>
                 </div>
@@ -131,27 +132,27 @@
             <div class="container-fluid cards-container">
                 <div class="card" style="width: 28rem;">
                     <div class="card-body box-rosa">
-                        <p class="card-text text-center text-white pb-3 pb-lg-0">"O SELF se propõe<br> resolver um dos principais<br> problemas presentes nos<br> Anos Finais do Ensino<br> Fundamental!"
+                        <p class="card-text text-center text-white py-4 fs-5">"O SELF se propõe<br> resolver um dos principais<br> problemas presentes nos<br> Anos Finais do Ensino<br> Fundamental!"
                         </p>
                     </div>
-                    <div class="text-center card-footer roxo border-0">
-                        <span class="rosa fs-6">Michael Hanfran</span><br> Coordenação Pedagógica Ensino<br> Fundamental (6º a 9º ano) na Escola Viva
+                    <div class="text-center card-footer roxo border-0 bg-transparent">
+                        <span class="rosa fs-6 bg-transparent">Michael Hanfran</span><br> Coordenação Pedagógica Ensino<br> Fundamental (6º a 9º ano) na Escola Viva
                     </div>
                 </div>
                 <div class="card ps-0 ps-lg-5" style="width: 40rem;">
-                    <div class="card-body box-azul p-4">
-                        <p class="card-text text-center text-white fs-6">"Trazer diversas habilidades das artes trazendo o socioemocional como pano de fundo, faz com que os alunos se desenvolvam muito mais e possam utilizar suas aptidões na sala de aula."</p>
+                    <div class="card-body box-azul pt-4 px-5">
+                        <p class="card-text text-center text-white pt-5 fs-5">"Trazer diversas habilidades das artes trazendo o socioemocional como pano de fundo, faz com que os alunos se desenvolvam muito mais e possam utilizar suas aptidões na sala de aula."</p>
                     </div>
-                    <div class="text-center card-footer roxo border-0">
-                        <span class="azul fs-5 p-0">Ismênio Dias</span><br> Professor de Socioemocional no Externato Santo Antônio
+                    <div class="text-center card-footer roxo border-0 bg-transparent">
+                        <span class="azul fs-5 p-0 bg-transparent">Ismênio Dias</span><br> Professor de Socioemocional no Externato Santo Antônio
                     </div>
                 </div>
                 <div class="card ps-0 ps-lg-5" style="width: 28rem;">
                     <div class="card-body box-verde">
-                        <p class="card-text text-center text-white p-0 p-lg-5">"O fato de trabalhar artes<br> com socioemocional é<br> sensacional. Acho a ideia<br> fantástica, ainda mais<br> vinda da Faber-Castell."
+                        <p class="card-text text-center text-white p-5 fs-5">"O fato de trabalhar artes<br> com socioemocional é<br> sensacional. Acho a ideia<br> fantástica, ainda mais<br> vinda da Faber-Castell."
                         </p>
                     </div>
-                    <div class="text-center card-footer verde border-0 fs-5">
+                    <div class="text-center card-footer verde border-0 fs-5 bg-transparent">
                         Coordenadora do colégio<br> Vergueiro em São Paulo
                     </div>
                 </div>
@@ -159,16 +160,16 @@
         </section>
         <section class="parceiros">
             <h3 class="roxo fw-bold fs-1 text-center text-uppercase pt-lg-5">Parceiros Ativos</h3>
-            <div class="container-fluid justify-content-center d-flex">
-                <div class="row justify-content-center">
+            <div class="container">
+                <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="row mt-5 text-center text-lg-start">
                             <div class="col-12 col-md-5">
-                                <img src="img/parceiro-1.png" alt="" class="img-fluid" id="imgParceiro1">
+                                <img src="img/parceiro-1.png"" class="img-fluid">
                             </div>
                             <div class="col-12 col-md-7 roxo">
                                 <h4 class="text-uppercase py-3 py-lg-0 pb-lg-3">Camino School</h4>
-                                <p class="fs-5">Parceira na produção de conteúdo<br> de aplicação da metodologia</p>
+                                <p class="fs-5">Parceira na produção de conteúdo de aplicação da metodologia</p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +187,33 @@
                 </div>
             </div>
         </section>
+        <section class="perguntas bg-roxo">        
+            <div class="container">
+                <h4 class="fs-1 text-white text-center text-lg-start ms-2 pb-4">FAQs</h4>
+                <div class="accordion container custom-accordion bg-transparent" id="accordionPanelsStayOpenExample">
+                    <div class="border border-1"></div> 
+                    <div class="accordion-item d-flex border-0 bg-transparent">
+                        <h2 class="accordion-header bg-transparent">
+                            <p class="accordion-title fs-5 text-white pt-4">Lorem ipsum dolor Lorem ipsum dolor</p>
+                        </h2>
+                        <button class="accordion-button collapsed bg-transparent text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne"> 
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body bg-transparent text-white p-0 m-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in.</p>
+                                </div>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </section>
+
     </main>
+    <footer>
+        <section class="contato">
+
+        </section>
+    </footer>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- JS -->

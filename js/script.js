@@ -1,5 +1,3 @@
-const menuIconeFechar = document.getElementsByClassName('burguer-menu');
-
-menuIconeFechar.addEventListener('click', function() {
-    menuIconeFechar.classList.toggle('active');
-});
+let changeIcon = function(icon) {
+    icon.classList.toggle('fa-times')
+}

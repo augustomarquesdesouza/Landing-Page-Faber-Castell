@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 1200000px;
+    height: auto;
 }
 
 img {
@@ -61,7 +61,7 @@ header nav #logo-header {
 
 @media (min-width: 556px) {
     .navbar button {
-        right: 90px;
+        right: 50px;
     }
 }
 
@@ -69,49 +69,11 @@ header nav #logo-header {
     box-shadow: none;
 }
 
-.navbar button .burguer-menu {
-    display: inline-block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    position: relative;
-}
-
-.navbar button .burguer-menu::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 9px;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
-    background-color: #fff;
-}
-
-.navbar button .burguer-menu::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -9px;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-}
-
-.burguer-menu.active {
-    opacity: 0; /* Esconde o span */
-}
-
-.burguer-menu.active::before {
-    transform: rotate(45deg); 
-    top: 8px; 
-}
-
-.burguer-menu.active::after {
-    transform: rotate(-45deg); 
-    bottom: 8px;
+.fa {
+    font-size: 5em;
+    color:#fff;
+    cursor: pointer;
+    transition:0.3s;
 }
 
 header .bg-principal {
@@ -133,6 +95,7 @@ header .bg-principal {
     margin-bottom: 60px;
 }
 
+
 #materiais {
     background: #f7f7f7;
 }
@@ -151,6 +114,7 @@ header .bg-principal {
 
 .cards .card {
     border: 0;
+    border-radius: 50px;
 }
 
 .cards .card-text {
@@ -247,19 +211,17 @@ header .bg-principal {
     background-size: contain;
 }
 
-.depoimentos .box-azul p {
-    font-size: 1rem;
-} 
+@media(min: 992px) {
+    .depoimentos  .card-body .card-text {
+        font-size: 2rem;
+    }
+}    
+
 
 .parceiros {
-    background-color: #f8f8f8;
+    background: #f7f7f7;
+    padding-bottom: 100px;
 }
-
-
-.depoimentos p {
-    font-size: 1.25rem;
-}
-
 
 @media (min-width: 992px) {
     .parceiros h3 {
@@ -274,6 +236,20 @@ header .bg-principal {
     }
 }
 
+.bg-roxo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #46465B;
+}
 
+.perguntas .border-1 {
+    max-width: 100%;
+}
 
+.accordion-button:not(.collapsed)  {
+    box-shadow: none;
+}
 
+.accordion-button:focus {
+    box-shadow: none;
+}
