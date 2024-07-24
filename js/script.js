@@ -1,3 +1,3 @@
 let changeIcon = function(icon) {
-    icon.classList.toggle('fa-times')
+    icon.classList.toggle('bi-x')
 }
