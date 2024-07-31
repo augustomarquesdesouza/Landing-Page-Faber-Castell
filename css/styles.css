@@ -372,6 +372,7 @@ header .bg-principal {
     }
 }
 
+
 .parceiros {
     background: #f7f7f7;
     padding-bottom: 100px;
@@ -454,7 +455,7 @@ header .bg-principal {
 
 @media(min-width: 768px){
     .accordion-body {
-        max-width: 50ch;
+        max-width: 40ch;
         margin: 0;
         padding: 0;
         font-size: 1.15rem;
@@ -466,12 +467,11 @@ header .bg-principal {
     background-image: none;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 4.5px;
     color: #46465B;
     transition:cubic-bezier(0.075, 0.82, 0.165, 1);
     font-weight: bolder;
-    transition: all .4s;
-    
+    margin-bottom: 6px;
+    margin-left: 0.5px;
 }
 
 .accordion-button:not(.collapsed)::after{
@@ -481,7 +481,6 @@ header .bg-principal {
     background-image: none;
     margin-top: 28px;
     font-weight: bolder;
-    margin-left: 1px;
     font-weight: bolder;
 }
 
@@ -532,6 +531,25 @@ header .bg-principal {
 .accordion-header {
     width: 100%;
     font-size: 1.2rem;
+}
+
+.accordion-hidden {
+    display: none;
+}
+
+#vejaMais {
+    border: 2px solid #fff;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .4s;
+}
+
+#vejaMais:hover {
+    background-color: #fff;
+    color: #46465B;
 }
 
 .accordion-item{
