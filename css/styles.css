@@ -97,12 +97,12 @@ header .bg-principal {
 }
 
 @media (min-width: 992px) {
-    .cards {
+    #materiais .cards {
         margin-bottom: 90px;
     }
 }
 
-.cards-container {
+#materiais .cards-container {
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
@@ -248,12 +248,6 @@ header .bg-principal {
     transition: .4s;
 }
 
-/* #cardMichael:hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-} */
-
-
 #fraseMichael {
     padding: 30px 20px;
 }
@@ -265,13 +259,7 @@ header .bg-principal {
 #cardIsmenio {
     background-color: #3dc1e5;
     border-radius: 10px;
-    transition: .4s;
 }
-
-/* #cardIsmenio:hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-} */
 
 #fraseIsmenio {
     padding: 30px 20px;
@@ -285,93 +273,56 @@ header .bg-principal {
     background-color: #9ac23c;
     border-radius: 10px;
     padding: 30px 20px;
-    transition: .4s;
 }
-
-/* #cardCoordenadora:hover {
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-} */
 
 #coordenadora {
     font-size: 1.1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     #cardMichael {
-        background: url(../img/box-rosa.png) center center no-repeat !important;
+        background: url(../img/box-rosa.png) center center;
+        background-repeat: no-repeat;
         background-size: contain;
-        width: 436px;
-        height: 274px;
-        transition: .4s;
+        max-width: 320px;
+        height: 200px;
+        padding: 30px 15px 0;
     }
-
-    /* #cardMichael:hover {
-        -webkit-filter: drop-shadow(8px 10px 5px rgba(0,0,0,.5));
-        filter: drop-shadow(5px 0px 5px rgba(0,0,0,.5));
-    } */
 
     #fraseMichael {
-        font-size: 1.4rem;
-        padding: 40px 20px;
-    }
-
-    #michaelFooter {
-        margin-top: -20px;
+        font-size: 1rem;
+        padding: 0;
     }
 
     #cardIsmenio {
-        background: url(../img/box-azul.png) center center no-repeat !important;
+        background: url(../img/box-azul.png);
+        background-repeat: no-repeat;
         background-size: contain;
-        width: 622px;
-        height: 286px;
-        transition: .4s;
+        max-width: 520px;
+        height: 200px;
+        padding: 30px 40px 0;
     }
-
-    /* #cardIsmenio:hover {
-        -webkit-filter: drop-shadow(8px 10px 5px rgba(0,0,0,.5));
-        filter: drop-shadow(5px 0px 5px rgba(0,0,0,.5));
-    } */
 
     #fraseIsmenio {
-        font-size: 1.4rem;
-        padding: 50px 20px;
-    }
-
-    #ismenioFooter {
-        margin-top: -35px;
+        font-size: 1rem;
+        padding: 0;
     }
 
     #cardCoordenadora {
-        background: url(../img/box-verde.png) center center no-repeat !important;
+        background: url(../img/box-verde.png);
+        background-repeat: no-repeat;
         background-size: contain;
-        width: 448px;
-        height: 261px;
-        transition: .4s;
+        max-width: 320px;
+        height: 200px;
+        padding: 30px 15px 0;
+        
     }
-
-    /* #cardCoordenadora:hover {
-        -webkit-filter: drop-shadow(8px 10px 5px rgba(0,0,0,.5));
-        filter: drop-shadow(5px 0px 5px rgba(0,0,0,.5));
-    } */
 
     #fraseCoordenadora {
-        font-size: 1.4rem;
-        padding: 10px 20px;
-    }
-
-    #coordenadora {
-        display: block;
-        margin-top: -60px;
+        font-size: 1rem;
+        padding: 0;
     }
 }   
-
-@media(min-width: 1400px) {
-    #fraseCoordenadora {
-        padding: 35px;
-    }
-}
-
 
 .parceiros {
     background: #f7f7f7;
@@ -484,6 +435,10 @@ header .bg-principal {
     font-weight: bolder;
 }
 
+#accordionPanelsStayOpenExample .accordion-item {
+    display: flex;
+}
+
 #accordionPanelsStayOpenExample>.accordion-item:nth-child(1n) {
     border-top: 2px solid #dc76a5 !important;
     border-radius: 0%;
@@ -529,7 +484,7 @@ header .bg-principal {
 }
 
 .accordion-header {
-    width: 100%;
+    width: 70%;
     font-size: 1.2rem;
 }
 
@@ -550,11 +505,6 @@ header .bg-principal {
 #vejaMais:hover {
     background-color: #fff;
     color: #46465B;
-}
-
-.accordion-item{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 }
 
 .perguntas .accordion .accordion-item .accordion-button {
